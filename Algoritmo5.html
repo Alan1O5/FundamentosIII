@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles1.css"/>
+    <title>Algoritmo 5</title>
+    <a href="index.html">Regresar al menu</a> <br></p>
+    <script>
+        function leib() {
+            var num1 = 1;
+            var num2 = 1;
+            var pi = 0;
+            var g = 0;
+            var resultado = "";
+            var it = parseInt(document.getElementById("iteraciones").value);
+            if (isNaN(it) || it<0) {
+                document.getElementById("out").innerHTML=`Resultado:<br> No es posible un resultado. Error en la captura de datos`
+            }
+            else{
+                for (let i = 0; i < it; i++) { 
+                if (i%2==0) {
+                    g+= num1/num2
+                    num2+=2
+                } else {
+                    g-=num1/num2
+                    num2+=2
+            }
+            pi= 4*g
+            document.getElementById("out").innerHTML = `Resultado:<br>${pi}`;
+        }
+            }
+    }
+    </script>
+</head>
+<body bgcolor="#87969d"> 
+   <h4> Metodo de Gottfried Leibniz </h4>
+    Numero de iteraciones que desea hacer: <br>
+    <input type="text" value="142500" id="iteraciones">
+    <input type="button" value="Calcule pi" onclick="leib()" style="color:rgb(5, 5, 5);">
+    <p id="out">Resultado:</p>
+</body>
+</html>

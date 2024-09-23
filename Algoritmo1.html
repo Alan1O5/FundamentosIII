@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link rel="stylesheet" type="text/css" href="styles1.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 1</title>
+    <a href="index.html">Regresar al menu</a>
+    <script>
+        function Multiplos(dato1,dato2) {
+            var count=0;
+            var a=parseInt(document.getElementById("numU").value);
+            var b=parseInt(document.getElementById("numD").value);
+            if (isNaN(a) || isNaN(b)) {
+                document.getElementById("out").innerHTML=`Resultado:<br> No es posible encontrar un resultado. Error en la captura de datos`
+            }
+            else{
+                var multiplos= "";
+            for(let i=a; i<=b; i++){
+                if (i%3==0) {
+                    multiplos += `<br>${i}`
+                }
+            if (a!=b) {
+                for(let i=a; i>=b; i--){
+                if (i%3==0) {
+                    multiplos += `<br>${i}`
+                }
+            }
+            }
+            
+            document.getElementById("out").innerHTML=`Resultado:<br> Los multipos de 3, Entre ${a} y ${b} son:${multiplos}`
+            }
+        }
+        }
+    </script>
+</head>
+<body bgcolor="#87969d">
+    <h4>Numeros que son  multiplos de 3 entre dos enteros </h4><br>
+    Dato 1 <input type="text" value="10" id="numU">
+    <br>
+    Dato 2 <input type="text"  value="20" id="numD">
+    <br>
+    <input type="button" value="click aqui" onclick="Multiplos()">
+    <br>
+    <p id="out">Resultado:</p>
+    <br>
+</body>
+</html>

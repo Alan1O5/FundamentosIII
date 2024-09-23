@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles1.css"/>
+    <title>Algoritmo 2</title>
+    <a href="index.html">Regresar al menu</a>
+</head>
+<body>
+    <script>
+        function Multiplos(dato1,dato2) {
+            var count=0;
+            var a=parseInt(document.getElementById("numU").value);
+            var b=parseInt(document.getElementById("numD").value);
+            if (isNaN(a) || isNaN(b)) {
+                document.getElementById("out").innerHTML=`Resultado:<br> No es posible un resultado. Error en la captura de datos`
+            }
+            else{
+                var multiplos= "";
+            for(let i=a; i<=b; i++){
+                if (i%3==0) {
+                    multiplos += `<br>${i}`
+                    count+=1
+                }
+            if (a!=b) {
+                for(let i=a; i>=b; i--){
+                if (i%3==0) {
+                    multiplos += `<br>${i}`
+                    count+=1
+                }
+            }
+            }
+            
+            document.getElementById("out").innerHTML=`Resultado:<br> Los multipos de 3 entre ${a} y ${b} son:${multiplos} <br>La cantidad de multiplos es: ${count}`
+            }
+        }
+        }
+    </script>
+</head>
+<body bgcolor="#87969d">
+    <h4>Encontrar e imprimir todos los numeros comprendidos que son  multiplos de 3 entre dos enteros </h4><br>
+    Dato 1 <input type="text" value="10" id="numU">
+    <br>
+    Dato 2 <input type="text"  value="20" id="numD">
+    <br>
+    <input type="button" value="click aqui" onclick="Multiplos()">
+    <br>
+    <p id="out">Resultado:</p>
+    <br>
+</body>
+</html>

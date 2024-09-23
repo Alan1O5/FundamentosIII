@@ -1,0 +1,173 @@
+/* Enlaces */
+a:link, a:visited {
+    color: #310303;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #310303;
+    text-decoration: underline;
+}
+
+/* Estilo general del cuerpo */
+body {
+    background-color: #646464;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    font-weight: normal;
+}
+
+/* Tablas */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+td {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #6a9fb5;
+    text-align: center;
+    font-size: 22px;
+    background-color: #ffffff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Celdas que contienen la suma */
+td.sum {
+    background-color: #484848;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Efecto hover sobre las celdas */
+td:hover {
+    background-color: #6a9fb5;
+    color: #000000;
+}
+
+
+/* Selectores */
+select {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #6a9fb5;
+    background-color: #ffffff;
+    color: #333333;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+select:hover {
+    border-color: #6a9fb5;
+}
+
+/* Resultados */
+
+/* Títulos */
+h2 {
+    color: #004563;
+    font-size: 28px;
+}
+
+/* Párrafos */
+p {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Resultados calculados */
+.resultados {
+    background-color: rgb(64, 64, 64);
+    color: #25295e;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedores generales */
+.info-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.button {
+    margin: 15px 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #386ab7; 
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    background-color: #386ab7;
+    transform: translateY(-3px); /* Efecto de elevar el botón */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más profunda */
+}
+
+.button:active {
+    transform: translateY(0); /* Restablecer la posición al hacer clic */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Reducir la sombra al hacer clic */
+}
+
+/* Botones deshabilitados */
+.button:disabled {
+    background-color: #7585be; 
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Estilo del input de captura */
+input[type="number"] {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #6a9fb5; /* Borde azul suave */
+    background-color: #ffffff;
+    color: #555555;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    width: 250px; /* Ancho personalizado */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Efecto hover */
+input[type="number"]:hover {
+    border-color: #386ab7; 
+}
+
+/* Efecto focus (cuando el input está seleccionado) */
+input[type="number"]:focus {
+    border-color: #23276e; 
+    box-shadow: 0 0 8px rgba(118, 31, 31, 0.5); 
+}
+
+/* Para deshabilitar el input */
+input[type="number"]:disabled {
+    background-color: #f4f4f4;
+    border-color: #cccccc;
+    color: #aaaaaa;
+    cursor: not-allowed;
+}
