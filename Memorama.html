@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama</title>
+    <link rel="stylesheet" href="estilos-memorama.css">
+    <script src="ofu-memorama.js"defer></script>
+    
+</head>
+<body onload="Revolver(); Fondo();">
+
+    <section class="inicio"> 
+        <img class="logo" src="file (1).png" alt="logo nba">
+        <h1 class="titulo"> Memorama de NBA </h1>
+    </section>
+    <a class="regresar" href="./index.html">Regresar</a>
+    <section class="memorama">
+        <div id="tabla">
+            <img src="lakers.png" id="0" alt="NBA" class="imagen" onclick="cambiarImagen(this,0)">
+            <img src="lakers.png" id="1" alt="NBA" class="imagen" onclick="cambiarImagen(this,1)">
+            <img src="lakers.png" id="2" alt="NBA" class="imagen" onclick="cambiarImagen(this,2)">
+            <img src="lakers.png" id="3" alt="NBA" class="imagen" onclick="cambiarImagen(this,3)">
+            <img src="lakers.png" id="4" alt="NBA" class="imagen" onclick="cambiarImagen(this,4)">
+            <img src="lakers.png" id="5" alt="NBA" class="imagen" onclick="cambiarImagen(this,5)">
+            <img src="lakers.png" id="6" alt="NBA" class="imagen" onclick="cambiarImagen(this,6)">
+            <img src="lakers.png" id="7" alt="NBA" class="imagen" onclick="cambiarImagen(this,7)">
+            <img src="lakers.png" id="8" alt="NBA" class="imagen" onclick="cambiarImagen(this,8)">
+            <img src="lakers.png" id="9" alt="NBA" class="imagen" onclick="cambiarImagen(this,9)">
+            <img src="lakers.png" id="10" alt="NBA" class="imagen" onclick="cambiarImagen(this,10)">
+            <img src="lakers.png" id="11" alt="NBA" class="imagen" onclick="cambiarImagen(this,11)">
+            <img src="lakers.png" id="12" alt="NBA" class="imagen" onclick="cambiarImagen(this,12)">
+            <img src="lakers.png" id="13" alt="NBA" class="imagen" onclick="cambiarImagen(this,13)">
+            <img src="lakers.png" id="14" alt="NBA" class="imagen" onclick="cambiarImagen(this,14)">
+            <img src="lakers.png" id="15" alt="NBA" class="imagen" onclick="cambiarImagen(this,15)">
+           
+        </div>
+    </section>
+    <section class="informacion">
+        <div id="contador">Pares Encontrados: 0</div>
+        <div id="intentos">Intentos: 0</div>
+        <input type="button" value="Reiniciar" onclick="Reiniciar()">
+    </section>
+    
+    <!-- <p id="salida"> </p> -->
+</body>
+</html>
