@@ -1,0 +1,63 @@
+input[type=button]{
+    background-color: #182541;
+    color: #b8b3b3;
+    border:none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+ 
+h1{
+    /*display: inline;*/
+    position:justify;
+    top: 20px;
+    left: 800px;
+    width: fit-content;
+    margin: 20px auto; 
+    padding: 10px 20px;
+}
+
+.regresar {
+    display: block;
+    width: fit-content;
+    margin: 20px auto; 
+    padding: 10px 20px;
+    background-color: #3b0707; 
+    color: white; 
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.regresar:hover {
+    background-color: #153944;
+    transform: scale(1.05); 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+body {
+    font-weight: bold;
+    color: #001d2c;
+    background-color: #646363;
+    text-align:center;
+    font-family: Arial, sans-serif;
+}
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+td {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #001d2c;
+    text-align: center;
+    font-size: 20px;
+}
+td.sum {
+    background-color: #1f1f21b3;
+    font-weight: bold;
+}
+
+
