@@ -1,0 +1,139 @@
+/* Estilo general del cuerpo */
+body {
+    background-color: #525252;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h1, h2 {
+    color: #0e0636;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #4c4c4c;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+    border: 1px solid #5a9bcb;
+    color: #f5f5f5;
+}
+
+th {
+    background-color: #4178d7;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Botones */
+.button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4178d7;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3166b3;
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:disabled {
+    background-color: #9ba7d0;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Inputs */
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 24px);
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 2px solid #5a9bcb;
+    background-color: #ffffff;
+    color: #333333;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #4178d7;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Resultados */
+.resultados {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #4c4c4c;
+    color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+/* Área de entrada */
+.input-area {
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la tabla */
+.table-container {
+    margin-top: 20px;
+    background-color: #4c4c4c;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 10px;
+}
